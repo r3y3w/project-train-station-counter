@@ -1,27 +1,16 @@
-//document.getElementById('count-el').innerText = 5
+// Grap the count-el element, and store it in a countEL variable
+let countEL = document.getElementById("count-el") // pass in argumnets
+let count = 0
+function increment() {
+    count++
+    // et countEL's innerText to the count
+    countEL.innerText = count
+    }
 
+// save() function logs out the count when it is called
 
+function save() {
+        console.log(count)
+}
 
-let count = 5
-
-
-count = count + 2
-
-console.log(count)
-
-
-let bonusPoints = 50
-
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 50
-
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints - 75
-
-console.log(bonusPoints)
-
-bonusPoints = bonusPoints + 45
-
-console.log(bonusPoints)
+save()
